@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/tab_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#519ee2"
+                android:gravity="center"
+                android:text="二维码扫描"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/iv_main1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ic_back" />
+            <ImageView
+                android:id="@+id/iv_collection"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_add" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_main1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="@drawable/erweima" />
+
+            <Button
+                android:id="@+id/bt_sms1"
+                style="@style/text_flag_02"
+                android:layout_width="170dp"
+                android:layout_height="40.0dip"
+                android:layout_marginTop="20dp"
+                android:text="扫一扫"
+                android:textColor="#ffffff"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#519ee2"
+                    android:gravity="center"
+                    android:text="扫描结果"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/iv_main"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ic_back" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:text="商品名:"
+                    android:id="@+id/tv_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_main1"
+                    android:layout_alignStart="@+id/tv_main1"
+                    android:paddingTop="10dp"
+                    android:textColor="#f0f"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/tv_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/tv_header"
+                    android:layout_toRightOf="@+id/tv_header"
+                    android:paddingTop="10dp"
+                    android:text="2"
+                    android:textColor="#f0f"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/tv_main1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_main"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="10dp"
+                    android:textColor="#519ee2"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/tv_main6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_main2"
+                    android:layout_alignStart="@+id/tv_main2"
+                    android:layout_below="@+id/tv_main1"
+                    android:paddingTop="10dp"
+                    android:textColor="#519ee2"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/tv_main2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_main1"
+                    android:layout_alignStart="@+id/tv_main1"
+                    android:layout_below="@+id/tv_main6"
+                    android:paddingTop="10dp"
+                    android:textColor="#519ee2"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/tv_main3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_main2"
+                    android:layout_alignStart="@+id/tv_main2"
+                    android:layout_below="@+id/tv_main2"
+                    android:paddingTop="10dp"
+                    android:textColor="#519ee2"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/tv_main4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_main2"
+                    android:layout_alignStart="@+id/tv_main2"
+                    android:layout_below="@+id/tv_main3"
+                    android:paddingTop="10dp"
+                    android:textColor="#519ee2"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/tv_main7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_main2"
+                    android:layout_alignStart="@+id/tv_main2"
+                    android:layout_below="@+id/tv_main4"
+                    android:paddingTop="10dp"
+                    android:textColor="#519ee2"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="操作工人："
+                    android:textColor="#f0f"
+                    android:textSize="15dp" />
+
+
+                <Button
+                    android:id="@+id/bt_select"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:text="选择工人" />
+
+                <Button
+                    android:id="@+id/bt_main"
+                    style="@style/text_flag_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50.0dip"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="上传信息"
+                    android:textColor="#ffff"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

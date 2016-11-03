@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:text="收藏"
+        android:background="#519ee2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+<ListView
+    android:dividerHeight="2dp"
+    android:id="@+id/lv_collection"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"></ListView>
+    <TextView
+        android:id="@+id/no_data"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="暂无收藏"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
